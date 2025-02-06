@@ -75,14 +75,17 @@ const HistosliderInput = ({ configuration, value, setValue }) => {
   if (!dimensions) {
     return <div ref={ref} style={style}>{Title}</div>;
   } else {
-
     // Ideally the user would be able to pass in a custom formatting function (via formatLabelFunction),
     // but I don't think reactR currently supports that.
     // TODO: this requires the following patch to histoslider:
     // https://github.com/samhogg/histoslider/pull/110
-    const formatLabelFunction = configuration.isDate ?
-      timeFormat(configuration.handleLabelFormat):
-      configuration.formatLabelFunction;
+    // const formatLabelFunction = configuration.isDate ?
+    //   timeFormat(configuration.handleLabelFormat):
+    //   configuration.formatLabelFunction;
+
+    const formatLabelFunction = function(d) { 
+      return Math.round(d).toString(); 
+    }
 
     // Ideally we'd use splicing to pass the rest of the configuration, but I
     // couldn't get it to work, so I'm just listing all the props for now

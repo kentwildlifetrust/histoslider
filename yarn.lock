@@ -1809,10 +1809,17 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha512-NJGVKPS81XejHcLhaLJS7plab0fK3slPh11mESeeDq2W4ZI5kUKK/LRRdVDvjJseojbPB7ZwjnyOybg3Igea/A==
 
-"d3-array@2 - 3", "d3-array@2.10.0 - 3", d3-array@^3.1.6:
+"d3-array@2 - 3", "d3-array@2.10.0 - 3":
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-3.1.6.tgz#0342c835925826f49b4d16eb7027aec334ffc97d"
   integrity sha512-DCbBBNuKOeiR9h04ySRBMW52TFVc91O9wJziuyXw6Ztmy8D3oZbmCkOO3UHKC7ceNJsN2Mavo9+vwV8EAEUXzA==
+  dependencies:
+    internmap "1 - 2"
+
+d3-array@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-3.2.4.tgz#15fec33b237f97ac5d7c986dc77da273a8ed0bb5"
+  integrity sha512-tdQAmyA18i4J7wprpYq8ClcxZy3SC31QMeByyCFyRt7BVHdREQZ5lpzoe5mFEYZUWe+oq8HBvk9JjpibyEV4Jg==
   dependencies:
     internmap "1 - 2"
 
@@ -2412,9 +2419,10 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
-"histoslider@github:samhogg/histoslider#7c44224219f017dc3add0f40f432799a3a3c1d66":
+histoslider@^2.0.16:
   version "2.0.16"
-  resolved "https://codeload.github.com/samhogg/histoslider/tar.gz/7c44224219f017dc3add0f40f432799a3a3c1d66"
+  resolved "https://registry.yarnpkg.com/histoslider/-/histoslider-2.0.16.tgz#44a17e89d7649e4242dbc628583e69d0054cbe12"
+  integrity sha512-ab++pZdaDse+Dfa8FW38r3JWsW2tiI8TfMeyu7bhf9VXXkvkfY6Da1ohoOQaTMovgdgXOuhU6oezwyRqGhZkSQ==
   dependencies:
     prop-types "^15.5.10"
     react-motion "^0.5.0"
